@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ parent() }}
+
+<div class="table-responsive">
+{{list | raw}}
+</div>
+ 
+ 
+{% endblock %}
+

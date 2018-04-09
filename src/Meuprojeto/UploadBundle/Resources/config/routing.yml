@@ -1,0 +1,16 @@
+Meuprojeto_upload_homepage:
+    path:     /
+    defaults: { _controller: MeuprojetoUploadBundle:Upload:index }
+
+Meuprojeto_upload_index:
+    path:     /upload
+    defaults: { _controller: MeuprojetoUploadBundle:Upload:index }
+
+Meuprojeto_upload_view:
+    path:     /upload/view/{id}
+    defaults: { _controller: MeuprojetoUploadBundle:View:view }
+
+
+Meuprojeto_upload_api:
+    path:     api/file/{id}
+    defaults: { _controller: MeuprojetoUploadBundle:Api:get }

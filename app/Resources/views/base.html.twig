@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="{{ asset('assets/bootstrap-3.3.7-dist/css/bootstrap.min.css') }}" />
+            <link rel="stylesheet" href="{{ asset('assets/css/estilo.css?2346') }}"  />
+            <link rel="stylesheet" href="{{ asset('assets/fancybox/jquery.fancybox.css') }}"  />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+         <nav class="navbar navbar-inverse navbar-top">
+                <div class="container">
+                     
+                        <h1>Upload XML FILE</h1>
+                     
+              
+                </div>
+            </nav>
+        <div class="container">
+           
+
+        {% block body %}
+        
+        
+
+        {% endblock %}
+        </div>
+        {% block javascripts %}
+            <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"> </script>
+            <script src="{{ asset('assets/bootstrap-3.3.7-dist/js/bootstrap.min.js') }}"> </script>
+            
+            <script src="{{ asset('assets/fancybox/jquery.fancybox.js') }}"> </script>
+             
+            <script src="{{ asset('assets/js/script.js') }}"> </script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,54 @@
+h1{
+    
+    text-align: center !important;
+    color: #fff !important;
+}
+h2{
+    text-align: center;
+}
+/*upload page*/
+.alert{
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+.file-upload{
+    width: 100%;
+    position: relative;
+    border: 10px dashed #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+    .file-upload:hover,.active { border: 10px dashed #337ab7; }
+
+    .active .glyphicon-open-file{
+        color: #337ab7;
+    }
+    .file-upload .glyphicon-open-file{
+        font-size: 50px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .file-upload .input-file{
+        top: 0;
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        z-index: 2;
+        -webkit-opacity: 0;
+        -moz-opacity: 0;
+        -ms-opacity: 0;
+        -o-opacity: 0;
+        opacity: 0;
+            
+    }
+.list-group-item a{
+    display: block;
+}
+.list-group-item .glyphicon-eye-open{
+    float: right !important;
+}  
+/*upload page*/

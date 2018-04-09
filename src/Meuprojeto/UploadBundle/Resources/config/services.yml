@@ -1,0 +1,13 @@
+
+services:
+    # ...
+    app.file_uploader:
+        class: Meuprojeto\UploadBundle\FileUploader
+        arguments: ['%file_upload%']
+
+    app.doctrine_file_listener:
+        class: Meuprojeto\UploadBundle\EventListener\FileUploadListener
+        arguments: ['@app.file_uploader']
+        tags:
+            -  { name: doctrine.event_listener, event: prePersist }
+            -  { name: doctrine.event_listener, event: preUpdate }

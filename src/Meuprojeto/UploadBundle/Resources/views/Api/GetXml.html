@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ parent() }}
+
+<h1>Upload XML FILE </h1>
+
+{{ form_start(form, { 'attr' : {'novalidate': 'novalidate' } }) }}
+    {# ... #}
+    {{ form_row(form.url) }}
+
+{{ form_end(form) }}
+
+ 
+ 	
+{% endblock %}
+

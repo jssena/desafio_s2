@@ -1,0 +1,7 @@
+Meuprojeto_upload:
+    resource: "@MeuprojetoUploadBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

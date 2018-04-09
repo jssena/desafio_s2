@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ parent() }}
+<div class="jumbotron">
+	<div class="row">
+	    <div class="col-md-offset-4 col-md-4">
+				{{ form_start(form ) }}
+				    {# ... #}
+				   
+				    	<div class=" btn btn-secondary btn-md file-upload" >	 
+							{{ form_label(form.url) }}
+						 
+							{{ form_widget(form.url,{'attr': {'class': 'input-file'}}) }}
+							<center><i class="glyphicon glyphicon-open-file"></i></center>
+						</div>	
+				    
+
+				    {{ form_row(form.save,{'attr': {'class': 'btn btn-primary center-block btn-lg'}}) }}
+					
+				{{ form_end(form) }}
+		</div>
+	</div>
+
+</div>
+
+<div class="panel panel-info">
+	<div class="panel-heading">
+    	<h3 class="panel-title">Files</h3>
+  	</div>
+  	<div class="panel-body">
+		<ul class="list-group">
+	 	
+			{% for file in files %}
+				<li class="list-group-item"><a href="{{ path('Meuprojeto_upload_view',{'id':file.id}) }}" class="list-group-item iframe "><i class="glyphicon glyphicon-open-file"></i>{{file.url}} <i class="glyphicon glyphicon-eye-open"></i></a></li>
+			{% endfor %}
+		</ul>
+  </div>
+  <div class="panel-footer panel-info"></div>
+</div>
+
+
+
+ 
+ 	
+{% endblock %}
+
