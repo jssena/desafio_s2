@@ -86,14 +86,18 @@ class ViewController extends Controller
                                 foreach($value3  as   $value4){
                                     if(is_array($value4)){
                                         foreach($value4  as   $value5){
-                                            if(is_array($value4)){
+                                            if(is_array($value5)){
+                                                foreach($value5  as   $value6){
+                                                    $show .= "<div class='list-group-item'>".$value6."</div>";
+                                                }
+
                                             }else{
-                                                $show .= $value5.'</br>';           
+                                                $show .= "<div class='list-group-item'>".$value5.'</div>';
                                             }
                                             
                                         }
                                     }else{
-                                        $show .= $value4.'</br>';        
+                                        $show .= '<div class="list-group-item">'.$value4.'</div>';        
                                     }
                                 }
                                 $show .= '</td>';
