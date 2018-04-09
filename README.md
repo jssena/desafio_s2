@@ -12,6 +12,7 @@ caminho
 http://localhost/desafio_s2-master/web/
 
 API
+
 Para fazer a pesquisa: curl -i -X GET 
 Requisicao GET: http://localhost/desafio_s2-master/web/api/file/{id do arquivo}
 
