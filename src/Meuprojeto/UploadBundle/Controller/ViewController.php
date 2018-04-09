@@ -90,7 +90,7 @@ class ViewController extends Controller
                                                 foreach($value5  as   $value6){
                                                     $show .= "<div class='list-group-item'>".$value6."</div>";
                                                 }
-
+                                                $show .='<div class="margin">';
                                             }else{
                                                 $show .= "<div class='list-group-item'>".$value5.'</div>';
                                             }
